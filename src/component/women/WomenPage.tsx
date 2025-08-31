@@ -4,12 +4,11 @@ import WomenOnlineIndia from "./WomenOnlineIndia"
 
 const WomenPage = () => {
   return (
-    <>
-    <WomenLandingPage/>
-    <WomenOnlineIndia/>
-    <WomenClothingBestPrice/>
-    
-    </>
+    <div className="min-h-screen">
+      <WomenLandingPage/>
+      <WomenOnlineIndia/>
+      <WomenClothingBestPrice/>
+    </div>
   )
 }
 

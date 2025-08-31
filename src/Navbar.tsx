@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import cartIcon from "./assets/svgs/cart.svg";
-import logo from "./assets/svgs/Logo.svg";
+import logo from "./assets/svgs/Logo.svg"; // Your uploaded logo
 import searchIcon from "./assets/svgs/searchIcon.svg";
 import userIcon from "./assets/svgs/user.svg";
 import heartIcon from "./assets/svgs/whishlist.svg";
@@ -8,24 +8,33 @@ import heartIcon from "./assets/svgs/whishlist.svg";
 const Navbar: React.FC = () => {
   return (
     <nav className="w-full bg-white shadow-sm border-b border-gray-200 fixed top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 lg:px-8">
+        
+        {/* LEFT: Logo */}
         <div className="flex items-center">
-          <Link to="/">
-            <img src={logo} alt="Euphoria" className="h-8 w-auto" />
+          <Link to="/" className="flex items-center">
+            <img
+              src={logo}
+              alt="Euphoria"
+              className="h-10 w-auto object-contain"
+            />
           </Link>
-
-          <div className="hidden md:flex items-center gap-10 lg:gap-14 ml-10 text-gray-700 font-medium">
-            <div className="hover:text-black cursor-pointer">Shop</div>
-            <div className="hover:text-black cursor-pointer">Men</div>
-            <Link to="/women" className="hover:text-black cursor-pointer">
-              Women
-            </Link>
-            <div className="hover:text-black cursor-pointer">Combos</div>
-            <div className="hover:text-black cursor-pointer">Joggers</div>
-          </div>
         </div>
 
+        {/* CENTER: Menu Links */}
+        <div className="hidden md:flex items-center gap-10 lg:gap-14 text-gray-700 font-medium">
+          <div className="hover:text-black cursor-pointer">Shop</div>
+          <div className="hover:text-black cursor-pointer">Men</div>
+          <Link to="/women" className="hover:text-black cursor-pointer">
+            Women
+          </Link>
+          <div className="hover:text-black cursor-pointer">Combos</div>
+          <div className="hover:text-black cursor-pointer">Joggers</div>
+        </div>
+
+        {/* RIGHT: Search and Icons */}
         <div className="flex items-center gap-6">
+          {/* Search Bar */}
           <div className="relative hidden lg:block">
             <input
               type="text"
@@ -39,6 +48,7 @@ const Navbar: React.FC = () => {
             />
           </div>
 
+          {/* Icons */}
           <div className="flex items-center gap-5">
             <img
               src={heartIcon}

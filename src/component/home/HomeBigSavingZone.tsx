@@ -6,30 +6,30 @@ import urbanShirt from "../../assets/images/Big Saving Zone5.png";
 
 const HomeBigSavingZone = () => {
   return (
-    <section className="w-full py-12 px-6 lg:px-20 bg-white">
-      <h2 className="text-3xl font-bold mb-10 relative inline-block group">
+    <section className="w-full py-12 px-4 sm:px-6 lg:px-20 bg-white">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-10 relative inline-block group">
         Big Saving Zone
         <span className="absolute left-0 bottom-[-5px] w-0 h-[3px] bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[380px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 auto-rows-[300px] sm:auto-rows-[350px] lg:auto-rows-[380px]">
         <div className="relative overflow-hidden rounded-lg group">
           <img
             src={hawaiianShirt}
             alt="Hawaiian Shirts"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 flex flex-col justify-between p-6 items-start">
+          <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 lg:p-6 items-start">
             <div>
-              <h3 className="text-white text-2xl font-semibold">
+              <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-semibold">
                 Hawaiian Shirts
               </h3>
-              <p className="text-white mt-2">Dress up in summer vibe</p>
-              <p className="text-white text-sm font-medium mt-1">
+              <p className="text-white mt-1 sm:mt-2 text-sm sm:text-base">Dress up in summer vibe</p>
+              <p className="text-white text-xs sm:text-sm font-medium mt-1">
                 UPTO 50% OFF
               </p>
             </div>
-            <button className="mt-4 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition duration-300">
+            <button className="mt-2 sm:mt-4 border border-white text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md hover:bg-white hover:text-black transition duration-300 text-sm sm:text-base">
               Shop Now
             </button>
           </div>
@@ -41,20 +41,20 @@ const HomeBigSavingZone = () => {
             alt="Printed T-Shirt"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 flex flex-col justify-between p-6 items-end text-right">
+          <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 lg:p-6 items-end text-right">
             <div>
-              <span className="bg-black text-white text-xs px-3 py-1 rounded-md">
+              <span className="bg-black text-white text-xs px-2 sm:px-3 py-1 rounded-md">
                 Limited Stock
               </span>
-              <h3 className="text-white text-2xl font-semibold mt-4">
+              <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-semibold mt-2 sm:mt-4">
                 Printed T-Shirt
               </h3>
-              <p className="text-white mt-2">New Designs Every Week</p>
-              <p className="text-white text-sm font-medium mt-1">
+              <p className="text-white mt-1 sm:mt-2 text-sm sm:text-base">New Designs Every Week</p>
+              <p className="text-white text-xs sm:text-sm font-medium mt-1">
                 UPTO 40% OFF
               </p>
             </div>
-            <button className="mt-4 border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-black transition duration-300">
+            <button className="mt-2 sm:mt-4 border border-white text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md hover:bg-white hover:text-black transition duration-300 text-sm sm:text-base">
               Shop Now
             </button>
           </div>
@@ -66,62 +66,62 @@ const HomeBigSavingZone = () => {
             alt="Cargo Joggers"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 flex flex-col justify-between p-6 items-end text-right">
+          <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 lg:p-6 items-end text-right">
             <div>
-              <h3 className="text-black text-2xl font-semibold">
+              <h3 className="text-black text-lg sm:text-xl lg:text-2xl font-semibold">
                 Cargo Joggers
               </h3>
-              <p className="text-black mt-2">Move with style & comfort</p>
-              <p className="text-black text-sm font-medium mt-1">
+              <p className="text-black mt-1 sm:mt-2 text-sm sm:text-base">Move with style & comfort</p>
+              <p className="text-black text-xs sm:text-sm font-medium mt-1">
                 UPTO 50% OFF
               </p>
             </div>
-            <button className="mt-4 border border-white text-white px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-300">
+            <button className="mt-2 sm:mt-4 border border-white text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md hover:bg-black hover:text-white transition duration-300 text-sm sm:text-base">
               Shop Now
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 col-span-1 md:col-span-3">
-          <div className="relative overflow-hidden rounded-lg group h-[380px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 col-span-1 sm:col-span-2 lg:col-span-3">
+          <div className="relative overflow-hidden rounded-lg group h-[300px] sm:h-[350px] lg:h-[380px]">
             <img
               src={urbanShirt}
               alt="Urban Shirts"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col justify-between p-6 items-end text-right">
+            <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 lg:p-6 items-end text-right">
               <div>
-                <h3 className="text-black text-2xl font-semibold">
+                <h3 className="text-black text-lg sm:text-xl lg:text-2xl font-semibold">
                   Urban Shirts
                 </h3>
-                <p className="text-black mt-2">Live In Comfort</p>
-                <p className="text-black text-sm font-medium mt-1">
+                <p className="text-black mt-1 sm:mt-2 text-sm sm:text-base">Live In Comfort</p>
+                <p className="text-black text-xs sm:text-sm font-medium mt-1">
                   FLAT 60% OFF
                 </p>
               </div>
-              <button className="mt-4 border border-white text-white px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-300">
+              <button className="mt-2 sm:mt-4 border border-white text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md hover:bg-black hover:text-white transition duration-300 text-sm sm:text-base">
                 Shop Now
               </button>
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-lg group h-[380px] md:col-span-2">
+          <div className="relative overflow-hidden rounded-lg group h-[300px] sm:h-[350px] lg:h-[380px] sm:col-span-2 lg:col-span-2">
             <img
               src={oversizedTshirt}
               alt="Oversized T-Shirts"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex flex-col justify-between p-6 items-end text-right">
+            <div className="absolute inset-0 flex flex-col justify-between p-3 sm:p-4 lg:p-6 items-end text-right">
               <div>
-                <h3 className="text-black text-2xl font-semibold">
+                <h3 className="text-black text-lg sm:text-xl lg:text-2xl font-semibold">
                   Oversized T-Shirts
                 </h3>
-                <p className="text-black mt-2">Street Style Icon</p>
-                <p className="text-black text-sm font-medium mt-1">
+                <p className="text-black mt-1 sm:mt-2 text-sm sm:text-base">Street Style Icon</p>
+                <p className="text-black text-xs sm:text-sm font-medium mt-1">
                   FLAT 60% OFF
                 </p>
               </div>
-              <button className="mt-4 border border-white text-white px-4 py-2 rounded-md hover:bg-black hover:text-white transition duration-300">
+              <button className="mt-2 sm:mt-4 border border-white text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md hover:bg-black hover:text-white transition duration-300 text-sm sm:text-base">
                 Shop Now
               </button>
             </div>

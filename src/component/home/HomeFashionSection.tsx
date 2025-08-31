@@ -36,7 +36,6 @@ const HomeFashionSection=()=> {
         </div>
       </div>
 
-     
       <div className="flex items-center justify-center  overflow-hidden">
         <Swiper
           modules={[Autoplay]}

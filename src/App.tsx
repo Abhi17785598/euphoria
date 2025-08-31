@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; 
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import HomePage from "./component/home/HomePage";
 import WomenPage from "./component/women/WomenPage";
+import ProductDetail from "./component/women/ProductDetail"; 
+import CartDetails from "./component/women/CartDetails";
+// ✅ Import your new Cart page
 
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,6 +33,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/women" element={<WomenPage />} />
+        <Route path="/product/:id" element={<ProductDetail />} /> 
+        <Route path="/cart" element={<CartDetails />} /> {/* ✅ New cart route */}
       </Routes>
       <Footer />
     </BrowserRouter>

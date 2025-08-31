@@ -11,20 +11,18 @@ import HomeNewArrival from "./HomeNewArrival"
 
 const HomePage = () => {
   return (
-    <>
-    <HomeHeroPage/>
-    <HomeHeroCart/>
-    <HomeNewArrival/>
-    <HomeBigSavingZone/>
-    <HomeFashionSection/>
-    <HomeCategoriesForMen/>
-    <HomeCategoriesForWomen/>
-    <HomeBrandDeal/>
-    <HomeLimitedZone/>
-    <HomeFeedbackSection/>
-
-    
-    </>
+    <div className="min-h-screen">
+      <HomeHeroPage/>
+      <HomeHeroCart/>
+      <HomeNewArrival/>
+      <HomeBigSavingZone/>
+      <HomeFashionSection/>
+      <HomeCategoriesForMen/>
+      <HomeCategoriesForWomen/>
+      <HomeBrandDeal/>
+      <HomeLimitedZone/>
+      <HomeFeedbackSection/>
+    </div>
   )
 }
 

@@ -35,28 +35,28 @@ const CategoriesForWomen=()=> {
   ];
 
   return (
-    <div className="w-full max-w-[1200px] mx-auto py-16">
-      <div className="flex items-center gap-2 mb-8">
+    <div className="w-full max-w-[1200px] mx-auto py-12 sm:py-16 px-4 sm:px-6">
+      <div className="flex items-center gap-2 mb-6 sm:mb-8">
         <div className="w-[5px] h-6 bg-purple-500 rounded"></div>
-        <h2 className="text-2xl font-bold">Categories For Women</h2>
+        <h2 className="text-xl sm:text-2xl font-bold">Categories For Women</h2>
       </div>
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-10">
         {categories.map((cat, index) => (
           <div key={index} className="flex flex-col">
-            <div className="w-full h-[393px] overflow-hidden rounded-[10px] ">
+            <div className="w-full h-[200px] sm:h-[250px] lg:h-[393px] overflow-hidden rounded-[10px]">
               <img
                 src={cat.img}
                 alt={cat.title}
-                className="w-full h-full object-cover "
+                className="w-full h-full object-cover"
               />
             </div>
 
             <div className="flex items-center justify-between mt-2">
               <div>
-                <h3 className="text-sm font-medium">{cat.title}</h3>
+                <h3 className="text-xs sm:text-sm font-medium">{cat.title}</h3>
                 <p className="text-xs text-gray-500">{cat.sub}</p>
               </div>
-              <img src={ArrowIcon} alt="arrow" className="w-4 h-4" />
+              <img src={ArrowIcon} alt="arrow" className="w-3 h-3 sm:w-4 sm:h-4" />
             </div>
           </div>
         ))}

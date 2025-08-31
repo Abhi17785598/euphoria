@@ -1,6 +1,6 @@
 const WomenOnlineIndia = () => {
   return (
-    <section className="w-full max-w-[1240px] mx-auto px-4 md:px-6 lg:px-8 my-15  rounded-md bg-white">
+    <section className="w-full max-w-[1240px] mx-auto px-4 md:px-6 lg:px-8 my-15 rounded-md bg-white">
       <h2 className="text-[24px] md:text-[28px] font-bold text-[#3C4242] mb-4">
         Clothing for Women Online in India
       </h2>
